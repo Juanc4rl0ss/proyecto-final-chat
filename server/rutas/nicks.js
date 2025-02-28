@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const db = require('../config/db');
 const bcrypt = require('bcrypt');
-const { usuarios } = require('../index');
+const { usuarios } = require('..');
 
 // Ruta para registrar un nuevo usuario
 router.post('/registrar', (req, res) => {
